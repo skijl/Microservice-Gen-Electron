@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+    <title>Microservice Generator</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../assets/icons/logo.png" alt="Logo" class="logo">
+            <h1>Microservice Generator</h1>
+        </div>
+        <form id="directoryForm">
+            <label for="directoryInput">Select a directory:</label>
+            <input type="file" id="directoryInput" webkitdirectory directory required multiple>
+            <!-- Add the 'multiple' attribute to allow selecting multiple directories -->
+            <!-- 'multiple' attribute is optional based on your requirements -->
+            <button id="generateDTOButton" type="button">Generate DTOs</button>
+        </form>
+        <div class="action">
+            <p>Adjust your DTOs before running</p>
+            <button id="generateServiceButton" type="button">Generate Service</button>
+            <button id="generateTestsButton" type="button">Generate Tests</button>
+        </div>
+    </div>
+    <div class="container" id="directoryOutput"></div>
+    <div class="container" id="processInfo">No Processes Running</div>
+
+    <script src="renderer.js" defer></script>
+</body>
+</html>

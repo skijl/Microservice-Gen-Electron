@@ -1,0 +1,32 @@
+{
+  "name": "microservice-gen",
+  "version": "1.0.0",
+  "productName": "Microservice Gen",
+  "description": "Microservice Generator for Java",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.maksym.microservice-gen",
+    "directories": {
+      "output": "dist"
+    },
+    "extraResources": [
+      {
+        "from": "node_modules/ffmpeg-static/ffmpeg.exe",
+        "to": "ffmpeg.exe"
+      }
+    ]
+  },
+  "keywords": [],
+  "author": "Maksym Makhrevych",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^30.0.1",
+    "electron-builder": "^24.13.3"
+  }
+}
