@@ -37,7 +37,7 @@ module-directory/
     - Generates the /dto directory with /response & /request classes
     - After this script you would have to look at the generated DTO classes and adjust them if you have your specific requirements
 3. **Generate Service** (The main script that generates all the service)
-    - /mapper - Map between Resquest DTO -> Model & Model -> ResponseDto
+    - /dtoMapper - Map between Resquest DTO -> Model & Model -> ResponseDto
     - /repository - JPA/Mongo repository layer for the application
     - /exception - Custom exceptions with Controller Advice for the proper exception handling
     - /service - Service interfaces
